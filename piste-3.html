@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Linia — Agenda créatif, ateliers et événements à Remouchamps</title>
+    <meta
+      name="description"
+      content="Consultez l’agenda créatif de Linia à Remouchamps : ateliers, rencontres, démonstrations, créateurs locaux, cartes cadeaux et nouveautés boutique."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="linia-agenda-page">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="linia-header" id="top">
+      <a class="linia-brand" href="#top" aria-label="Retour en haut de page">
+        <span class="linia-brand__name">LINIA</span>
+        <span class="linia-brand__tagline">Là où la création commence</span>
+      </a>
+
+      <button class="linia-menu-toggle" type="button" aria-controls="navigation-principale" aria-expanded="false">
+        <span class="linia-menu-toggle__icon" aria-hidden="true"></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <nav class="linia-nav" id="navigation-principale" aria-label="Navigation principale">
+        <a href="#top">Accueil</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#ateliers">Ateliers</a>
+        <a href="#agenda">Agenda créatif</a>
+        <a href="#createurs">Créateurs locaux</a>
+        <a href="#cadeaux">Cartes cadeaux</a>
+        <a href="#pourquoi">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn--primary linia-header__cta" href="#agenda">Voir l’agenda</a>
+    </header>
+
+    <main id="contenu">
+      <section class="wp-section linia-agenda-board" aria-labelledby="agenda-title">
+        <div class="wp-container linia-agenda-board__grid">
+          <div class="linia-agenda-intro">
+            <p class="eyebrow">Piste 3 · L’Agenda créatif</p>
+            <h1 id="agenda-title">L’agenda créatif de Linia</h1>
+            <p class="linia-agenda-intro__text">
+              Ateliers, démonstrations, rencontres locales et moments créatifs à venir à Remouchamps.
+            </p>
+            <p class="linia-agenda-intro__note">
+              Une page pensée comme un tableau de bord vivant : on voit ce qui arrive, ce qui reste disponible
+              et ce qui donne envie de revenir.
+            </p>
+            <div class="linia-agenda-filters" aria-label="Filtres rapides visuels">
+              <button type="button">Cette semaine</button>
+              <button type="button">Adultes</button>
+              <button type="button">Enfants</button>
+              <button type="button">Débutants</button>
+              <button type="button">Parent-enfant</button>
+              <button type="button">Gratuit</button>
+              <button type="button">Places restantes</button>
+            </div>
+          </div>
+
+          <article class="linia-agenda-highlight linia-event-featured wc-workshop-card">
+            <img
+              src="assets/photos/atelier-aquarelle-table.svg"
+              alt="Participant peignant à l’aquarelle pendant un atelier"
+              width="1400"
+              height="950"
+            />
+            <div class="linia-agenda-highlight__content">
+              <div class="linia-card-heading">
+                <span class="badge">Atelier · À la une</span>
+                <strong class="wc-price">65 €</strong>
+              </div>
+              <h2>Aquarelle botanique</h2>
+              <p>
+                Un atelier doux pour découvrir l’aquarelle, apprendre les bases et repartir avec l’envie de
+                continuer à la maison.
+              </p>
+              <p class="wc-workshop-meta">
+                Samedi 14 · 2h30 · Débutant · <span class="wc-stock-label">4 places restantes</span>
+              </p>
+              <a class="btn btn--primary wc-add-to-cart" href="#reservation-aquarelle">Réserver ma place</a>
+              <!-- Dans le site final, cet atelier pourra être un produit WooCommerce virtuel avec stock limité correspondant au nombre de places disponibles. -->
+            </div>
+          </article>
+
+          <aside class="linia-agenda-list" aria-labelledby="next-title">
+            <p class="eyebrow">À suivre</p>
+            <h2 id="next-title">Prochains rendez-vous</h2>
+            <a href="#agenda"><b>Mercredi 18</b><span>Carnet créatif</span></a>
+            <a href="#agenda"><b>Dimanche 22</b><span>Atelier parent-enfant</span></a>
+            <a href="#agenda"><b>Vendredi 27</b><span>Rencontre créateur local</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="wp-section linia-agenda-month" id="agenda" aria-labelledby="timeline-title">
+        <div class="wp-container">
+          <p class="eyebrow">Programmation</p>
+          <h2 id="timeline-title">Les prochains rendez-vous</h2>
+          <p class="section-lead">Un aperçu clair des ateliers, rencontres et moments à venir chez Linia.</p>
+
+          <div class="linia-agenda-timeline">
+            <article class="linia-agenda-date-card linia-event-card wc-workshop-card">
+              <div class="linia-date"><span>Samedi</span><b>14</b></div>
+              <div class="linia-event-card__body"><span class="badge">Atelier</span><h3>Aquarelle botanique</h3><p>2h30 · Débutant · 4 places restantes</p></div>
+              <strong class="wc-price">65 €</strong>
+              <a class="btn btn--small" href="#reservation-aquarelle">Réserver</a>
+            </article>
+            <article class="linia-agenda-date-card linia-event-card wc-workshop-card">
+              <div class="linia-date"><span>Mercredi</span><b>18</b></div>
+              <div class="linia-event-card__body"><span class="badge">Atelier</span><h3>Carnet créatif</h3><p>2h · Accessible à tous · 6 places</p></div>
+              <strong class="wc-price">45 €</strong>
+              <a class="btn btn--small" href="#ateliers">Réserver</a>
+            </article>
+            <article class="linia-agenda-date-card linia-event-card wc-workshop-card">
+              <div class="linia-date"><span>Dimanche</span><b>22</b></div>
+              <div class="linia-event-card__body"><span class="badge">Famille</span><h3>Atelier parent-enfant</h3><p>1h30 · Dès 6 ans · 3 places restantes</p></div>
+              <strong class="wc-price">38 €</strong>
+              <a class="btn btn--small" href="#ateliers">Réserver</a>
+            </article>
+            <article class="linia-agenda-date-card linia-event-card">
+              <div class="linia-date"><span>Vendredi</span><b>27</b></div>
+              <div class="linia-event-card__body"><span class="badge">Rencontre</span><h3>Rencontre créateur local</h3><p>Découverte · Entrée libre</p></div>
+              <strong class="wc-price">Gratuit</strong>
+              <a class="btn btn--small" href="#createurs">En savoir plus</a>
+            </article>
+            <article class="linia-agenda-date-card linia-event-card">
+              <div class="linia-date"><span>Samedi</span><b>28</b></div>
+              <div class="linia-event-card__body"><span class="badge">Boutique</span><h3>Démonstration matériel</h3><p>Papier, pinceaux, couleurs</p></div>
+              <strong class="wc-price">Libre</strong>
+              <a class="btn btn--small" href="#boutique">Découvrir</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="wp-section wp-section--tint linia-program-block" aria-labelledby="envies-title">
+        <div class="wp-container">
+          <p class="eyebrow">Accès rapides</p>
+          <h2 id="envies-title">Choisir un rendez-vous selon son envie</h2>
+          <p class="section-lead">Linia vous aide à trouver le bon moment selon votre niveau, votre âge ou votre envie créative.</p>
+          <div class="wp-card-grid wp-card-grid--four">
+            <article class="wc-category-card"><img src="assets/photos/agenda-atelier-creatif.svg" alt="Table d’atelier créatif avec papiers, pinceaux et végétaux" loading="lazy" width="1400" height="950" /><h3>Je débute</h3><p>Ateliers accessibles, matériel simple, accompagnement bienveillant.</p><a href="#agenda">Voir les ateliers débutants</a></article>
+            <article class="wc-category-card"><img src="assets/photos/atelier-parent-enfant.svg" alt="Enfant peignant avec des aquarelles pendant un atelier" loading="lazy" width="1400" height="950" /><h3>Je viens avec mon enfant</h3><p>Moments parent-enfant, ateliers enfants, créations à emporter.</p><a href="#agenda">Voir les ateliers famille</a></article>
+            <article class="wc-category-card"><img src="assets/photos/demo-materiel-art.svg" alt="Matériel beaux-arts disposé sur une table" loading="lazy" width="1400" height="950" /><h3>Je veux découvrir une technique</h3><p>Aquarelle, dessin, linogravure, pastel, Posca, techniques mixtes.</p><a href="#agenda">Explorer les techniques</a></article>
+            <article class="wc-category-card"><img src="assets/photos/cafe-livre-plante.svg" alt="Tasse de café avec livre et plante dans une ambiance douce" loading="lazy" width="1400" height="950" /><h3>Je veux passer un bon moment</h3><p>Café, rencontre, démonstration, soirée créative ou brunch créatif.</p><a href="#agenda">Voir les événements</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="wp-section" id="ateliers" aria-labelledby="workshop-title">
+        <div class="wp-container linia-shop-workshop">
+          <article class="linia-event-card wc-workshop-card" id="reservation-aquarelle">
+            <img src="assets/photos/atelier-aquarelle-table.svg" alt="Table d’aquarelle avec pinceaux et papier" loading="lazy" width="1400" height="950" />
+            <div class="linia-event-card__content">
+              <span class="badge">Prochain atelier</span>
+              <h2 id="workshop-title">Réserver un atelier, préparer son matériel</h2>
+              <h3>Prochain atelier : Aquarelle botanique</h3>
+              <p class="wc-workshop-meta">Samedi 14 · 2h30 · Débutant · <span class="wc-stock-label">4 places restantes</span></p>
+              <strong class="wc-price">65 €</strong>
+              <a class="btn btn--primary wc-add-to-cart" href="#contact">Réserver ma place</a>
+            </div>
+          </article>
+
+          <aside class="linia-product-panel" id="boutique" aria-labelledby="products-title">
+            <p class="eyebrow">Boucle WooCommerce future</p>
+            <h2 id="products-title">Matériel conseillé pour continuer</h2>
+            <div class="linia-products">
+              <article class="wc-product-card"><span>Aquarelle</span><h3>Set aquarelle débutant</h3><p>Conseil : idéal après l’atelier.</p><b class="wc-price">32 €</b><a class="wc-view-product" href="#contact">Voir le produit</a></article>
+              <article class="wc-product-card"><span>Papier</span><h3>Carnet papier coton</h3><p>Support adapté aux lavis doux.</p><b class="wc-price">18 €</b><a class="wc-view-product" href="#contact">Voir le produit</a></article>
+              <article class="wc-product-card"><span>Pinceau</span><h3>Pinceau souple</h3><p>Pour gestes fluides et débutants.</p><b class="wc-price">12 €</b><a class="wc-add-to-cart" href="#contact">Ajouter au panier</a></article>
+            </div>
+            <a class="btn btn--ghost" href="#boutique">Voir la sélection aquarelle</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="wp-section wp-section--tint linia-gift-card-section" id="cadeaux" aria-labelledby="gift-title">
+        <div class="wp-container">
+          <p class="eyebrow">Expériences à offrir</p>
+          <h2 id="gift-title">Offrir une date, un atelier ou un moment</h2>
+          <p class="section-lead">Pour un anniversaire, une fête, une attention ou une envie de faire découvrir Linia, les cartes cadeaux permettent d’offrir une expérience créative.</p>
+          <div class="wp-card-grid">
+            <article class="wc-product-card"><img src="assets/photos/agenda-carnet-creatif.svg" alt="Carte cadeau créative posée avec du papier" loading="lazy" width="1400" height="950" /><h3>Bon atelier</h3><p>Pour offrir une place à un atelier créatif.</p><b>À partir de 40 €</b><a class="btn btn--primary" href="#contact">Offrir un atelier</a></article>
+            <article class="wc-product-card"><img src="assets/photos/carte-cadeau-creative.svg" alt="Cadeau artisanal avec papier et ruban" loading="lazy" width="1400" height="950" /><h3>Carte cadeau libre</h3><p>Pour laisser le choix entre boutique, atelier et moment créatif.</p><b>Montant libre</b><a class="btn btn--primary" href="#contact">Offrir une carte</a></article>
+            <article class="wc-product-card"><img src="assets/photos/cafe-livre-plante.svg" alt="Café carnet et matériel créatif" loading="lazy" width="1400" height="950" /><h3>Pack moment créatif</h3><p>Un atelier, une pause café et une petite surprise.</p><b>À partir de 65 €</b><a class="btn btn--primary" href="#contact">Découvrir</a></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="wp-section" id="createurs" aria-labelledby="creators-title">
+        <div class="wp-container">
+          <p class="eyebrow">Local & transmission</p>
+          <h2 id="creators-title">Rencontrer les créateurs</h2>
+          <p class="section-lead">Linia met en lumière des artistes et artisans locaux à travers des créations, des rencontres, des collaborations et des ateliers invités.</p>
+          <div class="linia-creator-grid">
+            <article class="linia-creator-feature"><img src="assets/photos/createur-local-artisanat.svg" alt="Objet artisanal présenté dans un atelier" loading="lazy" width="1400" height="950" /><div><span class="badge">Créateur invité du mois</span><h3>Créateur invité du mois</h3><p>Une sélection d’objets, d’illustrations ou de pièces artisanales à découvrir en boutique.</p><a class="btn btn--primary" href="#contact">Découvrir</a></div></article>
+            <article class="linia-mini-card"><h3>Créations locales</h3><p>Objets et illustrations en dépôt-vente.</p></article>
+            <article class="linia-mini-card"><h3>Atelier invité</h3><p>Transmission par un artisan de la région.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="wp-section wp-section--tint" aria-labelledby="soon-title">
+        <div class="wp-container">
+          <p class="eyebrow">À annoncer</p>
+          <h2 id="soon-title">Bientôt chez Linia</h2>
+          <p class="section-lead">Une section pensée pour annoncer les futurs ateliers, collaborations, nouveautés boutique et événements.</p>
+          <div class="linia-soon-list" aria-label="Actualités à venir"><span>Brunch créatif</span><span>Démonstration de matériel</span><span>Atelier linogravure</span><span>Rencontre avec un artisan local</span><span>Atelier enfants pendant les vacances</span><span>Nouvelle sélection papeterie</span></div>
+          <a class="btn btn--primary" href="#contact">Suivre les actualités</a>
+        </div>
+      </section>
+
+      <section class="wp-section linia-local-section" aria-labelledby="local-title">
+        <div class="wp-container linia-local-box">
+          <p class="eyebrow">SEO local</p>
+          <h2 id="local-title">Votre agenda créatif à Remouchamps</h2>
+          <p>Linia accueille les curieux, familles, artistes et passionnés de Remouchamps, Aywaille, Sprimont, Theux, Spa, Liège et de la Vallée de l’Amblève.</p>
+          <ul><li>Ateliers créatifs</li><li>Boutique beaux-arts</li><li>Créateurs locaux</li><li>Cartes cadeaux</li><li>Coin café</li><li>Conseils personnalisés</li></ul>
+          <a class="btn btn--primary" href="#contact">Préparer ma visite</a>
+        </div>
+      </section>
+
+      <section class="wp-section" id="pourquoi" aria-labelledby="why-title">
+        <div class="wp-container">
+          <p class="eyebrow">Décision design</p>
+          <h2 id="why-title">Pourquoi cette piste ?</h2>
+          <div class="wp-card-grid">
+            <article class="linia-mini-card"><h3>Point fort</h3><p>Cette piste rend Linia très vivante. Elle donne envie de revenir régulièrement pour consulter les prochains ateliers, rencontres et nouveautés.</p></article>
+            <article class="linia-mini-card"><h3>Risque</h3><p>Elle demande une mise à jour régulière de l’agenda pour rester crédible.</p></article>
+            <article class="linia-mini-card"><h3>Quand choisir cette piste</h3><p>Si Linia veut être perçue comme une adresse créative active, avec une programmation claire et des rendez-vous à ne pas manquer.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="linia-footer" id="contact">
+      <div><b>LINIA</b><p>Là où la création commence</p></div>
+      <nav aria-label="Navigation pied de page"><a href="#boutique">Boutique</a><a href="#ateliers">Ateliers</a><a href="#agenda">Agenda créatif</a><a href="#createurs">Créateurs locaux</a><a href="#cadeaux">Cartes cadeaux</a><a href="#pourquoi">À propos</a><a href="#contact">Contact</a><a href="#contact">Conditions générales</a><a href="#contact">Politique de confidentialité</a></nav>
+      <p>Prototype de présentation — piste 3</p>
+    </footer>
+
+    <a class="linia-sticky-cta" href="#agenda">Voir l’agenda</a>
+    <script src="js/main.js"></script>
+  </body>
+</html>
